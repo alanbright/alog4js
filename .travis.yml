@@ -1,0 +1,10 @@
+language: node_js
+sudo: false
+node_js:
+    - "0.12"
+script: 
+    - node examples/main.js
+    - LEVEL=debug SHOW=DB node examples/main.js
+    - LEVEL=trace SHOW=DB.index node examples/main.js
+    - LEVEL=error SHOW=default,DB,modules.insert node examples/main.js
+    - LEVEL=warn SHOW=default,DB.index node examples/main.js
