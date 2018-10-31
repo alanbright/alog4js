@@ -11,7 +11,7 @@ and the domain list only need to set the top level
 We can use its sublevel without further setting, thanks for Gareth Jones(log4js-node)
 
 ## prerequisite
-[nodejs 10.12.0] (https://nodejs.org/dist/v10.12.0/) or bigger.
+[nodejs 10.12.0](https://nodejs.org/dist/v10.12.0/) or bigger.
 
 ## installation
 
