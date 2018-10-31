@@ -32,31 +32,37 @@ LEVEL=info SHOW=* node main.js
 
 ## Example
 
-run
-```bash
-node examples/main.js
-```
-![Demo1](https://raw.githubusercontent.com/alanbright/alog4js/master/screenshots/demo1.PNG)
+* Default run with level=info, SHOW=*
+>```bash
+> node examples/main.js
+>```
+> ![Demo1](https://raw.githubusercontent.com/alanbright/alog4js/master/screenshots/demo1.PNG)
 
-```bash
-LEVEL=debug SHOW=DB node examples/main.js
-```
-![Demo2](https://raw.githubusercontent.com/alanbright/alog4js/master/screenshots/demo2.PNG)
+* set log level at 'debug', and show log belongs 'DB'.
+>```bash
+>LEVEL=debug SHOW=DB node examples/main.js
+>```
+> ![Demo2](https://raw.githubusercontent.com/alanbright/alog4js/master/screenshots/demo2.PNG)
 
-```bash
-LEVEL=trace SHOW=DB.index node examples/main.js
-```
-![Demo3](https://raw.githubusercontent.com/alanbright/alog4js/master/screenshots/demo3.PNG)
 
-```bash
-LEVEL=error SHOW=default,DB,modules.insert node examples/main.js
-```
-![Demo4](https://raw.githubusercontent.com/alanbright/alog4js/master/screenshots/demo4.PNG)
+* set log level at 'trace', and show log belongs 'DB.index' only.
+>```bash
+>LEVEL=trace SHOW=DB.index node examples/main.js
+>```
+>![Demo3](https://raw.githubusercontent.com/alanbright/alog4js/master/screenshots/demo3.PNG)
 
-```bash
-LEVEL=warn SHOW=default,DB.index node examples/main.js
-```
-![Demo5](https://raw.githubusercontent.com/alanbright/alog4js/master/screenshots/demo5.PNG)
+
+* set log level at 'error', and show log belongs 'default' or 'DB' or 'modules.insert'.
+>```bash
+>LEVEL=error SHOW=default,DB,modules.insert node examples/main.js
+>```
+>![Demo4](https://raw.githubusercontent.com/alanbright/alog4js/master/screenshots/demo4.PNG)
+
+* set log level at 'warn', and show log belongs 'default' or 'DB.index'.
+>```bash
+>LEVEL=warn SHOW=default,DB.index node examples/main.js
+>```
+>![Demo5](https://raw.githubusercontent.com/alanbright/alog4js/master/screenshots/demo5.PNG)
 
 ## License
 
