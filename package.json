@@ -1,0 +1,27 @@
+{
+  "name": "alog4js",
+  "version": "0.0.1",
+  "description": "a wrappers of log4js",
+  "main": "src/alog4js.js",
+  "scripts": {
+    "test": "node examples/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanbright/alog4js.git"
+  },
+  "keywords": [
+    "alog4js",
+    "log4js"
+  ],
+  "author": "Alan Bright",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alanbright/alog4js/issues"
+  },
+  "homepage": "https://github.com/alanbright/alog4js#readme",
+  "dependencies": {
+    "debug": "^4.1.0",
+    "log4js": "^3.0.6"
+  }
+}
