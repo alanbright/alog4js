@@ -4,5 +4,8 @@ node_js:
     - "10.12.0"
 script: 
     - node -v
-    - npm run test
     - node examples/main.js
+    - LEVEL=debug SHOW=DB node examples/main.js
+    - LEVEL=trace SHOW=DB.index node examples/main.js
+    - LEVEL=error SHOW=default,DB,modules.insert node examples/main.js
+    - LEVEL=warn SHOW=default,DB.index node examples/main.js
