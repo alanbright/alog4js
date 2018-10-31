@@ -1,6 +1,7 @@
+# alog4js [![Build Status][travis-image]][travis-url]
+[travis-image]: https://travis-ci.org/alanbright/alog4js.svg?branch=master
+[travis-url]: https://travis-ci.org/alanbright/alog4js
 [npm-url]: https://npmjs.org/package/alog4js
-
-# alog4js
 
 This is a wrappers of the [log4js-node](https://github.com/log4js-node/log4js-node),
 and we only add an init function for layout setting.
