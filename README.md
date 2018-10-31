@@ -36,28 +36,27 @@ run
 ```bash
 node examples/main.js
 ```
-![Demo1](https://raw.githubusercontent.com/alanbright/alog4js/master/screenshots/demo1.png)
-
+![Demo1](https://raw.githubusercontent.com/alanbright/alog4js/master/screenshots/demo1.PNG)
 
 ```bash
 LEVEL=debug SHOW=DB node examples/main.js
 ```
-![Demo2](https://raw.githubusercontent.com/alanbright/alog4js/master/screenshots/demo2.png)
+![Demo2](https://raw.githubusercontent.com/alanbright/alog4js/master/screenshots/demo2.PNG)
 
 ```bash
 LEVEL=trace SHOW=DB.index node examples/main.js
 ```
-![Demo3](https://raw.githubusercontent.com/alanbright/alog4js/master/screenshots/demo3.png)
+![Demo3](https://raw.githubusercontent.com/alanbright/alog4js/master/screenshots/demo3.PNG)
 
 ```bash
 LEVEL=error SHOW=default,DB,modules.insert node examples/main.js
 ```
-![Demo4](https://raw.githubusercontent.com/alanbright/alog4js/master/screenshots/demo4.png)
+![Demo4](https://raw.githubusercontent.com/alanbright/alog4js/master/screenshots/demo4.PNG)
 
 ```bash
 LEVEL=warn SHOW=default,DB.index node examples/main.js
 ```
-![Demo5](https://raw.githubusercontent.com/alanbright/alog4js/master/screenshots/demo5.png)
+![Demo5](https://raw.githubusercontent.com/alanbright/alog4js/master/screenshots/demo5.PNG)
 
 ## License
 
