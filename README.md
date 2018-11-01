@@ -1,6 +1,7 @@
-# alog4js [![Build Status][travis-image]][travis-url]
+# alog4js [![Build Status][travis-image]][travis-url] [![NPM Version][npm-image]][npm-url]
 [travis-image]: https://travis-ci.org/alanbright/alog4js.svg?branch=master
 [travis-url]: https://travis-ci.org/alanbright/alog4js
+[npm-image]: https://img.shields.io/npm/v/alog4js.svg
 [npm-url]: https://npmjs.org/package/alog4js
 
 This is a wrappers of the [log4js-node](https://github.com/log4js-node/log4js-node),
