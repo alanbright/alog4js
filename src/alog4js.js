@@ -28,6 +28,7 @@ function init(topLevelList){
         }
     }
     debug('check categories', categories);
+    log4js.categories = categories
     return log4js.configure({
         appenders: { out: { type: 'stdout' } },
         categories: categories
@@ -36,5 +37,35 @@ function init(topLevelList){
 
 log4js.init = init;
 //debug(log4js)
+
+function update(show, level){
+    const logLevel = level || log4js.getLogger().level;
+    debug('check logLevel',logLevel);
+    debug('check log4js.categories',log4js.categories);
+    if(show !== undefined){
+        if(show === '*'){
+            for(let elem of Object.keys(log4js.categories)){
+                debug("elem", elem)
+                log4js.categories[elem].level = logLevel;
+            }
+        }else{
+            const debugArray = show.split(',')
+            debug('check debugArray',debugArray);
+            for (let elem of debugArray){
+                if(log4js.categories[elem]){
+                    log4js.categories[elem].level = logLevel;
+                }else{
+                    log4js.categories[elem] = { appenders: ['out'], level: logLevel }
+                }
+            }
+        }
+    }
+    debug('check set categories', log4js.categories);
+    return log4js.configure({
+        appenders: { out: { type: 'stdout' } },
+        categories: JSON.parse(JSON.stringify(log4js.categories))
+    });
+}
+log4js.update = update
 
 module.exports = log4js;

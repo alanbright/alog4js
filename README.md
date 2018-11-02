@@ -5,7 +5,7 @@
 [npm-url]: https://npmjs.org/package/alog4js
 
 This is a wrappers of the [log4js-node](https://github.com/log4js-node/log4js-node),
-and we only add an init function for layout setting.
+and we add functions for dynamic layout setting.
 
 The init function parameter is an Array of domain list, 
 and the domain list only need to set the top level
@@ -33,6 +33,23 @@ var logger = log4js.getLogger(); //now you can use the logger with default tag
 RUN with argument
 ```bash
 LEVEL=info SHOW=* node main.js
+```
+
+Dynamic Layout setting:
+
+* dynamic change log level
+implement your REST API or other approach to run this code,
+then you can update the logger level anytime you want.
+```javascript
+logger.level = 'debug'; // ['trace','debug','info','warn','error','fatal']
+```
+
+* dynamic change specific log domain with log level
+implement yout REST API or other approach to run this code,
+then you can update log level of specific domain
+```javascript
+//show is the variable format like Run Argument SHOW, check Example for further information
+log4js.update(show, level);
 ```
 
 ## Example
