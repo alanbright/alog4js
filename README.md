@@ -30,26 +30,26 @@ log4js.init(['default','Foo_toplevel1','Foo_toplevel2'...])
 var logger = log4js.getLogger(); //now you can use the logger with default tag
 ```
 
-RUN with argument
+RUN with argument:
 ```bash
 LEVEL=info SHOW=* node main.js
 ```
 
 Dynamic Layout setting:
 
+Implement your REST API and run these code properly.
+
+And your can update server log layout setting online.
+
 * dynamic change log level
-implement your REST API or other approach to run this code,
-then you can update the logger level anytime you want.
 ```javascript
 logger.level = 'debug'; // ['trace','debug','info','warn','error','fatal']
 ```
 
 * dynamic change specific log domain with log level
-implement yout REST API or other approach to run this code,
-then you can update log level of specific domain
 ```javascript
 //show is the variable format like Run Argument SHOW, check Example for further information
-log4js.update(show, level);
+log4js.update(show, level); // log4js.update("DB.pool", "trace");
 ```
 
 ## Example

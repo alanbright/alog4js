@@ -49,6 +49,12 @@ function update(show, level){
                 log4js.categories[elem].level = logLevel;
             }
         }else{
+            //sync the newest status
+            for(let elem of Object.keys(log4js.categories)){
+                debug("elem", elem, "log4js.getLogger(elem).level.levelStr",log4js.getLogger(elem).level.levelStr)
+                log4js.categories[elem].level = log4js.getLogger(elem).level.levelStr;
+            }
+
             const debugArray = show.split(',')
             debug('check debugArray',debugArray);
             for (let elem of debugArray){
