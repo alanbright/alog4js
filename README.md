@@ -52,9 +52,15 @@ logger.level = 'debug'; // ['trace','debug','info','warn','error','fatal']
 log4js.update(show, level); // log4js.update("DB.pool", "trace");
 ```
 
+## Demo
+
+run demo on your machine
+[alog4js-demo](https://github.com/alanbright/alog4js-demo)
+
+
 ## Example
 
-* Default run with level=info, SHOW=*
+* Default run with LEVEL=info, SHOW=*
 >```bash
 > node examples/main.js
 >```
