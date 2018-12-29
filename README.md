@@ -57,6 +57,9 @@ log4js.update(show, level); // log4js.update("DB.pool", "trace");
 run demo on your machine
 [alog4js-demo](https://github.com/alanbright/alog4js-demo)
 
+or look demo video on youtube
+
+[![Video](http://img.youtube.com/vi/iDieNYhmOik/0.jpg)](https://www.youtube.com/watch?v=iDieNYhmOik)
 
 ## Example
 
