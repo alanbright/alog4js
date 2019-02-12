@@ -52,6 +52,16 @@ logger.level = 'debug'; // ['trace','debug','info','warn','error','fatal']
 log4js.update(show, level); // log4js.update("DB.pool", "trace");
 ```
 
+* trace the log by file
+```shell
+less -R trace.log
+```
+or install the colortail (recommended)
+```shell
+colortail -f trace.log
+```
+
+
 ## Demo
 
 run demo on your machine
