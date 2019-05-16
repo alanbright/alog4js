@@ -3,7 +3,7 @@ const log4js = require("log4js");
 
 function init(topLevelList){
 
-    const logLevel = process.env.LEVEL.toLowerCase() || 'info';
+    const logLevel = (process.env.LEVEL || 'info').toLowerCase();
     const levelObj = {}
     for (let elem of topLevelList){
         levelObj[elem] = 'off'; //default show nothing.
